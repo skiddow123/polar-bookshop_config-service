@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Polar Bookshop Config Service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/skiddow123/catalog-service-config
+          default-label: main
+          timeout: 2
+          clone-on-start: true
+          force-pull: true
+
+server:
+  port: 7070
+  tomcat:
+    threads:
+      min-spare: 3
+      max: 50
+    keep-alive-timeout: 15s
+    connection-timeout: 2s
