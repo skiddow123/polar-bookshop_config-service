@@ -1,11 +1,11 @@
 spring:
   application:
-    name: Polar Bookshop Config Service
+    name: config-service
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/skiddow123/catalog-service-config
+          uri: https://github.com/skiddow123/polar-bookshop_service-config-data-stroe
           default-label: main
           timeout: 2
           clone-on-start: true
