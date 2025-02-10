@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/skiddow123/polar-bookshop_service-config-data-stroe
+          uri: https://github.com/skiddow123/polar-bookshop_service-config-data-store
           default-label: main
           timeout: 2
           clone-on-start: true
