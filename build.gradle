@@ -27,6 +27,12 @@ ext {
 	set('springCloudVersion', "2024.0.0")
 }
 
+bootBuildImage {
+	builder = "docker.io/paketobuildpacks/builder-jammy-base"
+	imageName = "${project.name}"
+	environment = ["BP_JVM_VERSION": "23"]
+}
+
 dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-config-server'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
